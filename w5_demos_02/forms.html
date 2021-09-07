@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>W5 | Forms</title>
+</head>
+<body>
+
+    <form method="" action="">
+
+        <!--textfield input-->
+        <label for="fName">First Name: </label>
+        <input type="text" name="fName" id="fName" placeholder="First Name" maxlength="20" required>
+
+        <br>
+        <!--number field-->
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age">
+
+        <!--checkboxes: you can select more than one at a time-->
+        <p>Favorite Season</p>
+        <input type="checkbox" name="season1" value="Winter">
+        <label for="season1">Winter</label>
+        <input type="checkbox" name="season2" value="Spring">
+        <label for="season2">Spring</label>
+        <input type="checkbox" name="season3" value="Summer">
+        <label for="season3">Summer</label>
+        <input type="checkbox" name="season4" value="Fall">
+        <label for="season4">Fall</label>
+
+        <br>
+        <!--drop-down selection: you can only select one, it works like a LIST-->
+        <label for="vehicle">What kind of vehicle you drive/ride?</label>
+        <select name="vehicle">
+            <option value="empty">---</option>
+            <option value="car">Car</option>
+            <option value="bike">Bike</option>
+            <option value="motorcycle">Motorcycle</option>
+            <option value="boat">Boat</option>
+            <option value="dragon">Dragon</option>
+            <option value="roci">Rocinante</option>
+
+        </select>
+
+        <br>
+        <!--radio buttons: can only select one from a set-->
+        <label for="program">Are you a Programmer or a Networker?</label>
+        <br>
+        <input type="radio" name="program" value="programmer">Programmer
+        <br>
+        <input type="radio" name="program" value="networker">Networker
+        <br>
+
+        <!--submit button: what initiates sending the form data somewhere; clicking this will then run the method & action applied to the form element-->
+        <br><br>
+        <input type="submit" value="SUBMIT!">
+
+
+    </form>
+
+    <form>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="first">First Name: </label>
+                    </td>
+                    <td>
+                        <input type="text" name="first" id="first">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="age">Age: </label>
+                    </td>
+                    <td>
+                        <input type="number" name="age" id="age">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    
+</body>
+</html>
